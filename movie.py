@@ -10,7 +10,6 @@ def get_movie_title(types, release_year, listed_in):
     """
     with sqlite3.connect("netflix.db") as conn:
         cursor = conn.cursor()
-        # Фильтрация по результатам агрегации и группировки.
         query = f"""
             SELECT title, description
             FROM netflix
