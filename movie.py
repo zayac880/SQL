@@ -40,7 +40,7 @@ def movie_to_json(movie):
     return 'Данные загружены'
 
 
-movies = get_movie_title('movie', '1990', 'dramas')
+movies = get_movie_title('movie', '2000', 'horror')
 data_movie = movie_to_json(movies)
 
 print(data_movie)
